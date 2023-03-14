@@ -17,6 +17,9 @@ class TiebaSpider(scrapy.Spider):
     
     def parse(self, response): #forum parser
         print("Crawling page %d..." % self.cur_page)
+        print(response.xpath('//li[contains(@class, "j_thread_list")]'))
+        print(response.url)
+        print(f"User-Agent: {response.request.headers['User-Agent']}")
         for sel in response.xpath('//li[contains(@class, "j_thread_list")]'):
             data = json.loads(sel.xpath('@data-field').extract_first())
             if data['id'] == 1: # 去掉"本吧吧主火热招募"

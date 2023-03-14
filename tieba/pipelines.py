@@ -45,11 +45,11 @@ class TiebaPipeline(object):
         tbname = self.settings['TIEBA_NAME']
         if not isinstance(tbname, bytes):
             tbname = tbname.encode('utf8')
-        start_url = "http://tieba.baidu.com/f?kw=%s&pn=%d" \
+        start_url = "https://tieba.baidu.com/f?kw=%s&pn=%d" \
                 %(quote(tbname), 50 * (begin_page - 1))
         if self.settings['GOOD_ONLY']:
             start_url += '&tab=good'
-        
+
         spider.start_urls = [start_url]
         
     def close_spider(self, spider):

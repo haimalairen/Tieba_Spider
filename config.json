@@ -1,10 +1,11 @@
 {
-    "DEFAULT_TIEBA": "仙五前修改",
+    "DEFAULT_TIEBA": "梦幻五开",
     "MYSQL_PASSWD": "root",
     "MYSQL_DBNAME": {
         "仙五前修改": "Pal5Q_Diy",
         "风靡义磊": "fmyl",
-        "仙剑五外传": "xianjianwu"
+        "仙剑五外传": "xianjianwu",
+        "梦幻五开": "menghuan"
     },
     "MYSQL_USER": "root",
     "MYSQL_HOST": "localhost",
