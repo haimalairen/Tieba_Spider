@@ -3,7 +3,7 @@
 # Define here the models for your spider middleware
 #
 # See documentation in:
-# http://doc.scrapy.org/en/latest/topics/spider-middleware.html
+# http://doc.scrapy.org/en/latest/topics/spider-middleware.html demo
 
 from scrapy import signals
 
