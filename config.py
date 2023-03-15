@@ -85,3 +85,5 @@ def init_database(host, user, passwd, port, dbname):
         PRIMARY KEY (id), FOREIGN KEY (post_id) REFERENCES post(id)) CHARSET=utf8mb4;")
     db.commit()
     db.close()
+
+#first-commit
